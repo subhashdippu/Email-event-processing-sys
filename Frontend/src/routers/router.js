@@ -1,16 +1,18 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../pages/main";
-import Home from "../pages/home";
+import ComposeEmail from "../components/composeEmail";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
     children: [
       {
-        path: "/",
-        element: <Home />,
+        path: "/compose-email",
+        element: <ComposeEmail />,
       },
     ],
   },
 ]);
+
 export default router;
