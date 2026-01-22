@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../pages/main";
 import ScheduledEmail from "../components/scheduledEmail";
 import ComposeEmail from "../components/composeEmail";
-
+import SentEmail from "../components/sentEmail";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/compose-email",
         element: <ComposeEmail />,
+      },
+      {
+        path: "/sent-email",
+        element: <SentEmail />,
       },
     ],
   },
